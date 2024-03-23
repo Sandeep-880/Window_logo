@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-image:linear-gradient( to right ,black ,gray, silver);
+           
+        }
+
+        #parent{
+          
+            height: 200px;
+            width: 200px;
+            margin: 150px;  
+            
+        }
+
+        #child{
+            height: 200px;
+            width: 200px;
+            background-image: url(winows10.png);
+            background-repeat: no-repeat;
+            background-size: 200px 200px;
+            transform: perspective(100px) rotate3d(0 , 5 , 0 , -10deg);
+            transition-property:  all;
+            transition-duration: 1s;
+          
+        }
+
+        #child:hover{
+           box-shadow: 10px 10px 10px rgb(13, 5, 128);
+        }
+
+        #div2{
+           
+            height: 210px;
+            width: 210px;
+            margin-left: 750px;
+            margin-top: -350px;
+        }
+
+        .div3{
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            margin-top: 5px;
+            margin-left: 5px;
+            float: left;
+            border-radius: 5px;
+            background-image: linear-gradient(to bottom right, blue ,rgb(105, 205, 245));
+            /* transform: perspective(100px) rotate3d(0 , 5 , 0 , -10deg); */
+            /* transition-property:  all;
+            transition-duration: 1s; */
+            
+         }
+
+        #div2:hover{
+           box-shadow: 10px 10px 10px rgb(23, 14, 151);
+           transform: perspective(100px) rotate3d(0 , 5 , 0 , -10deg);
+           transition-property:  all;
+           transition-duration: 1s;
+          
+        }
+
+        #div2:hover{
+            
+            border-radius: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <!-- <h1>Windows 10</h1> -->
+         <div id="child">
+
+        </div>
+    </div>
+
+    <div id="div2">
+        <div class="div3">
+
+        </div>
+
+        <div class="div3">
+
+        </div>
+
+        <div class="div3">
+
+        </div>
+
+        <div class="div3">
+
+        </div>
+    </div>
+
+    </html>
+</body>
